@@ -66,10 +66,6 @@ Partial Class TestDisplaySpreadsheets
         cnn.Close()
     End Sub
 
-    'The Content-Disposition header basically allows you to specify that the response you're sending back is to be treated as 
-    'an attachment rather than content which results In the download dialog
-    'weblog.west-wind.com/posts/2007/May/21/Downloading-a-File-with-a-Save-As-Dialog-in-ASPNET
-
     Public Sub downloadFile(sender As Object, e As EventArgs)
         Dim Link As New LinkButton
         Link = sender
